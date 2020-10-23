@@ -32,7 +32,6 @@ spring:
         min-idle: 0
     #连接超时时间
     timeout: 1000
-
 #注册中心
 eureka:
   client:
@@ -50,7 +49,6 @@ eureka:
     prefer-ip-address: true
     #IP地址
     ip-address: 127.0.0.1
-
 #Mybatis-plus
 mybatis-plus:
   mapper-locations: classpath:/mapper/*.xml
