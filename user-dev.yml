@@ -62,4 +62,4 @@ mybatis-plus:
       logic-not-delete-value: 0 # 0代表没删除
     banner: false
 test:
-  name: dlz
+  name: dlzz
