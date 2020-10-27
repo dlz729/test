@@ -40,6 +40,8 @@ eureka:
       defaultZone: http://127.0.0.1:7001/eureka/,http://127.0.0.1:7002/eureka/
   #服务续约
   instance:
+    instance-id: ${spring.cloud.client.ip-address}:#{server.port}
+     status-page-url-path: http://localhost:8889/swagger-ui.html
     #定义服务续约任务的调用间隔时间，默认为30s,即每30s维护一个心跳用来持续告诉注册中心，“我还活着”，以防止注册中心的“剔除任务”
     #续约间隔，默认30s
     lease-renewal-interval-in-seconds: 5
