@@ -63,3 +63,6 @@ mybatis-plus:
     banner: false
 test:
   name: dlzzzzz
+#是否开启swagger
+swagger:
+  enable: true
